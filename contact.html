@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    <div class="logo">
+        <img src="logo.png">
+        <h2>My NGO</h2>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="navbar">
+<ul id="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="container">
+<h2>Contact Us</h2>
+
+<form onsubmit="submitForm(); return false;">
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<textarea id="message" placeholder="Message"></textarea>
+<button type="submit">Send</button>
+</form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
