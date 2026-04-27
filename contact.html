@@ -3,6 +3,43 @@
 <head>
 <title>Contact</title>
 <link rel="stylesheet" href="style.css">
+    <title>Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-card {
+            width: 450px;
+            margin: 80px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+            .contact-card h2 {
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+        .contact-info {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #222;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -10,7 +47,7 @@
 <div class="header">
     <div class="logo">
         <img src="logo.png">
-        <h2>My NGO</h2>
+        <h2>PEARLVINE SOCIAL FOUNDATION</h2>
     </div>
     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 </div>
@@ -24,17 +61,35 @@
 </div>
 
 <div class="container">
-<h2>Contact Us</h2>
+<!--<h2>Contact Us</h2>
 
 <form onsubmit="submitForm(); return false;">
 <input type="text" id="name" placeholder="Your Name">
 <input type="email" id="email" placeholder="Your Email">
 <textarea id="message" placeholder="Message"></textarea>
 <button type="submit">Send</button>
-</form>
+</form>-->
+   
+  
+
+        <div class="contact-card" style="float:left;">
+            <h2>Contact Details</h2>
+            <div class="contact-info">
+                <p><span class="label">Name:</span> Vinayak Bansod</p>
+                <p><span class="label">Regd-Office:</span> C-1/111,Sector 7,Opposite- Vijeta Complex,New Raejendranagar,Raipur C.G.,Pin-492001</p>
+                <p><span class="label"> Address for Communication:</span>Vinayak Bansod,501,Classic Towers,In front of Sai Deams City,Mahatma Gandhi Nagar, Amlidih,Raipur ,Pin- 492001 </p>
+                <p><span class="label">Mobile:</span> +91 8889345495,9039345495,7000860091</p>
+                <p><span class="label">Email:</span> psfraipur@gmail.com</p>
+            </div>
+        </div>
+
+  
+
 
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
+
