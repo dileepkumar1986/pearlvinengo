@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title>उपलब्ध सेवाएँ</title>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #f9fbfd;
+    border-left: 5px solid #27ae60;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    transition: 0.3s;
+}
+
+.card i {
+    font-size: 22px;
+    color: #27ae60;
+    min-width: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #34495e;
+    font-size: 18px;
+}
+</style>
+
+</head>
+
+<body>
+    <!-- Header Load -->
+    <div id="header"></div>
+    <!-- Slider Load -->
+  
+
+    <div class="container">
+
+        <h1>उपलब्ध सेवाएँ</h1>
+
+        <div class="services">
+
+            <div class="card"><i class="fa-solid fa-house"></i> सीनियर सिटिजन के लिए घर जैसा वातावरण व भोजन व्यवस्था।</div>
+
+            <div class="card"><i class="fa-solid fa-bed"></i> सुविधा अनुसार विशेष डिज़ाइन किए गए रूम्स।</div>
+
+            <div class="card"><i class="fa-solid fa-calendar-days"></i> सीमित दिनों के लिए रहने की सुविधा।</div>
+
+            <div class="card"><i class="fa-solid fa-utensils"></i> शुद्ध शाकाहारी ऑर्गेनिक भोजन।</div>
+
+            <div class="card"><i class="fa-solid fa-tv"></i> प्रोजेक्टर, टीवी व संगीत से मनोरंजन।</div>
+
+            <div class="card"><i class="fa-solid fa-book"></i> लाइब्रेरी में ज्ञानवर्धक पुस्तकें।</div>
+
+            <div class="card"><i class="fa-solid fa-spa"></i> योगा, मेडिटेशन व एक्सरसाइज क्लासेस।</div>
+
+            <div class="card"><i class="fa-solid fa-stethoscope"></i> आयुर्वेदिक व नेचरोपैथी चिकित्सा।</div>
+
+            <div class="card"><i class="fa-solid fa-seedling"></i> ऑर्गेनिक खेती का अवसर।</div>
+
+            <div class="card"><i class="fa-solid fa-brain"></i> आध्यात्मिक व व्यक्तिगत विकास।</div>
+
+            <div class="card"><i class="fa-solid fa-leaf"></i> गार्डनिंग व ऑर्गेनिक फसल उगाने का मौका।</div>
+
+            <div class="card"><i class="fa-solid fa-solar-panel"></i> सोलर पैनल व इन्वर्टर सुविधा।</div>
+
+            <div class="card"><i class="fa-solid fa-ambulance"></i> एम्बुलेंस सुविधा उपलब्ध।</div>
+
+            <div class="card"><i class="fa-solid fa-briefcase"></i> स्थानीय लोगों के लिए रोजगार अवसर।</div>
+
+            <div class="card"><i class="fa-solid fa-person-swimming"></i> स्विमिंग पूल व गार्डन।</div>
+
+            <div class="card"><i class="fa-solid fa-hand-holding-heart"></i> 12A व 80G टैक्स छूट सुविधा।</div>
+
+        </div>
+
+        <div class="footer">
+            समता ओल्ड एज होम एवं मेडिटेशन सेन्टर  <br />
+            रिंगनी रोड , मोहदी ,पो. चरोदा से 5 KM , तह. अहिरवार, जिला - दुर्ग ,छ.ग.
+        </div>
+
+    </div>
+    <div class="donate">
+        <h2>Support Us</h2>
+        <button>Donate Now</button>
+    </div>
+    <script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+
+    </script>
+    <script src="script/script.js"></script>
+</body>
+
+
+
+</html>
