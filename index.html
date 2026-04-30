@@ -12,7 +12,7 @@
     <!-- Slider Load -->
     <div id="slider"></div>
 <!-- Slider -->
-  
+
 
 <div class="container">
 <h2>Welcome</h2>
@@ -31,16 +31,20 @@ Please scan the QR code below to make a donation.
         <img src="images/qrcode.png" alt="Scan to Donate">
     </div>
 </div>
-   
-
-   
     <div class="donate">
 Pearlvine
 </div>
 
 
-    
+    <script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+fetch("slider.html")
+.then(res => res.text())
+.then(data => document.getElementById("slider").innerHTML = data);
+
+    </script>
 <script src="script/script.js"></script>
-  
 </body>
 </html>
