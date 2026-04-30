@@ -41,34 +41,6 @@ Pearlvine
 
     
 <script src="script/script.js"></script>
-     <script>
-let index = 0;
-let slides = document.getElementsByClassName("slide");
-let texts = document.getElementsByClassName("text-slide");
-
-function showSlide(i) {
-    for (let s of slides) s.classList.remove("active");
-    for (let t of texts) t.classList.remove("text-active");
-
-    slides[i].classList.add("active");
-    texts[i].classList.add("text-active");
-}
-
-function autoSlide() {
-    index++;
-    if (index >= slides.length) index = 0;
-    showSlide(index);
-}
-
-function manualSlide(n) {
-    index += n;
-    if (index >= slides.length) index = 0;
-    if (index < 0) index = slides.length - 1;
-    showSlide(index);
-}
-
-// Auto slide every 5 seconds
-setInterval(autoSlide, 5000);
-    </script>
+  
 </body>
 </html>
