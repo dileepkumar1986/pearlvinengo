@@ -19,7 +19,7 @@ body {
     padding: 40px 20px;
 }
 
-/* Section Wrapper */
+/* Section */
 .section {
     max-width: 1100px;
     margin: 40px auto;
@@ -34,16 +34,6 @@ body {
     padding: 25px;
     border-radius: 12px;
     margin-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-}
-
-.punch-line h2 {
-    margin: 0;
-}
-
-.punch-line p {
-    margin-top: 8px;
-    opacity: 0.9;
 }
 
 /* Top Section */
@@ -65,7 +55,6 @@ body {
 
 .qr-code img {
     width: 180px;
-    margin-top: 15px;
 }
 
 /* Events Box */
@@ -77,20 +66,7 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.events-box h3 {
-    margin-top: 0;
-    color: #27ae60;
-}
-
-.events-box ul {
-    padding-left: 18px;
-}
-
-.events-box li {
-    margin-bottom: 10px;
-}
-
-/* Slider Section */
+/* Slider */
 .content-box1 {
     display: flex;
     background: #fff;
@@ -99,16 +75,13 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-.slider1 {
-    width: 50%;
-    position: relative;
-}
+.slider1 { width: 50%; position: relative; }
 
 .slide1 {
     position: absolute;
     width: 100%;
     opacity: 0;
-    transition: opacity 1s;
+    transition: 1s;
 }
 
 .slide1 img {
@@ -117,23 +90,12 @@ body {
     object-fit: cover;
 }
 
-.active {
-    opacity: 1;
-    position: relative;
-}
+.active { opacity: 1; position: relative; }
 
-.content {
-    width: 50%;
-    padding: 25px;
-}
+.content { width: 50%; padding: 25px; }
 
-.text-slide {
-    display: none;
-}
-
-.text-active {
-    display: block;
-}
+.text-slide { display: none; }
+.text-active { display: block; }
 
 /* Arrows */
 .prev, .next {
@@ -143,30 +105,73 @@ body {
     background: rgba(0,0,0,0.5);
     color: #fff;
     padding: 8px;
-    cursor: pointer;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .prev { left: 10px; }
 .next { right: 10px; }
 
+/* Footer */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-box h3 {
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 5px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin: 8px 0;
+}
+
+.footer-box ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+    color: #fff;
+}
+
+/* Bottom */
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
 /* Responsive */
 @media(max-width:768px) {
-    .top-section {
-        flex-direction: column;
-    }
-
-    .donation-box, .events-box {
-        width: 100%;
-    }
-
-    .content-box1 {
-        flex-direction: column;
-    }
-
-    .slider1, .content {
-        width: 100%;
-    }
+    .top-section { flex-direction: column; }
+    .donation-box, .events-box { width: 100%; }
+    .content-box1 { flex-direction: column; }
+    .slider1, .content { width: 100%; }
+    .footer-box { width: 100%; }
 }
 
 </style>
@@ -174,70 +179,51 @@ body {
 
 <body>
 
-<!-- Header -->
 <div id="header"></div>
-
-<!-- Slider -->
 <div id="slider"></div>
 
-<!-- Welcome -->
 
-
-<!-- Main Section -->
 <div class="section">
 
-    <!-- Punch Line -->
     <div class="punch-line">
         <h2>✨ व्यक्तिगत ,सामाजिक ,आध्यात्मिक ,आर्थिक उन्नति के लिए एक कदम आगे...✨</h2>
-       
+        <p>Every small step of kindness brings hope and a better future.</p>
     </div>
 
-    <!-- Donation + Events -->
     <div class="top-section">
 
-        <!-- Donation Box -->
         <div class="donation-box">
             <h2>🙏 Support Our NGO</h2>
-            <p>Your small contribution can change someone's life.<br>
-            Please scan the QR code below to donate.</p>
-
+            <p>Scan the QR code to donate</p>
             <div class="qr-code">
-                <img src="images/qrcode.png" alt="QR Code">
+                <img src="images/qrcode.png">
             </div>
         </div>
 
-        <!-- Events Box -->
         <div class="events-box">
             <h3>📅 Upcoming Events</h3>
             <ul>
-                <li>Free Health Camp – 15 August 2026</li>
-                <li>Food Distribution Drive – 20 August 2026</li>
-                <li>School Kit Distribution – 25 August 2026</li>
+                <li>Health Camp. Date...</li>
+                <li>Food Drive.</li>
+                <li>Meditation Camp.</li>
             </ul>
 
             <h3>🕒 Recent Events</h3>
             <ul>
-                <li>Blanket Distribution for needy families</li>
-                <li>Laptop provided to a student</li>
-                <li>Women Empowerment Awareness Program</li>
+                <li>Blanket Distribution</li>
+                <li>Laptop Donation</li>
+                <li>Women Awareness</li>
             </ul>
         </div>
 
     </div>
 
-    <!-- Slider + Content -->
     <div class="content-box1">
 
         <div class="slider1">
-            <div class="slide1 active">
-                <img src="images/smallslider/1.jpg">
-            </div>
-            <div class="slide1">
-                <img src="images/smallslider/2.jpg">
-            </div>
-            <div class="slide1">
-                <img src="images/smallslider/3.jpg">
-            </div>
+            <div class="slide1 active"><img src="images/smallslider/1.jpg"></div>
+            <div class="slide1"><img src="images/smallslider/2.jpg"></div>
+            <div class="slide1"><img src="images/smallslider/3.jpg"></div>
 
             <span class="prev" onclick="manualSlide(-1)">❮</span>
             <span class="next" onclick="manualSlide(1)">❯</span>
@@ -246,17 +232,15 @@ body {
         <div class="content">
             <div class="text-slide text-active">
                 <h2>Blanket Distribution</h2>
-                <p>We provide blankets to needy families and children.</p>
+                <p>Helping needy families stay warm.</p>
             </div>
-
             <div class="text-slide">
                 <h2>Education Support</h2>
-                <p>Helping children with laptops, books and quality education.</p>
+                <p>Providing books and laptops.</p>
             </div>
-
             <div class="text-slide">
                 <h2>Happiness</h2>
-                <p>Making the world beautiful with harmony and peace.</p>
+                <p>Spreading smiles and hope.</p>
             </div>
         </div>
 
@@ -264,44 +248,65 @@ body {
 
 </div>
 
-<!-- Scripts -->
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>About Us</h3>
+            <p>Pearlvine Social Foundation works for education, health, and support for needy people.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📍 Your City, India</p>
+            <p>📞 +91 9876543210</p>
+            <p>✉️ info@ngo.org</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Pearlvine Social Foundation | All Rights Reserved
+    </div>
+</div>
+
 <script>
-fetch("header.html")
-.then(res => res.text())
-.then(data => document.getElementById("header").innerHTML = data);
+fetch("header.html").then(res=>res.text()).then(data=>document.getElementById("header").innerHTML=data);
+fetch("slider.html").then(res=>res.text()).then(data=>document.getElementById("slider").innerHTML=data);
 
-fetch("slider.html")
-.then(res => res.text())
-.then(data => document.getElementById("slider").innerHTML = data);
-</script>
+let index=0;
+let slides=document.getElementsByClassName("slide1");
+let texts=document.getElementsByClassName("text-slide");
 
-<script>
-let index = 0;
-let slides = document.getElementsByClassName("slide1");
-let texts = document.getElementsByClassName("text-slide");
-
-function showSlide(i) {
-    for (let s of slides) s.classList.remove("active");
-    for (let t of texts) t.classList.remove("text-active");
-
+function showSlide(i){
+    for(let s of slides)s.classList.remove("active");
+    for(let t of texts)t.classList.remove("text-active");
     slides[i].classList.add("active");
     texts[i].classList.add("text-active");
 }
 
-function autoSlide() {
-    index++;
-    if (index >= slides.length) index = 0;
+function autoSlide(){
+    index=(index+1)%slides.length;
     showSlide(index);
 }
 
-function manualSlide(n) {
-    index += n;
-    if (index >= slides.length) index = 0;
-    if (index < 0) index = slides.length - 1;
+function manualSlide(n){
+    index=(index+n+slides.length)%slides.length;
     showSlide(index);
 }
 
-setInterval(autoSlide, 5000);
+setInterval(autoSlide,5000);
 </script>
 
 </body>
