@@ -26,7 +26,27 @@ body {
     padding: 20px;
 }
 
-/* Top Section (Donation + Events) */
+/* Punch Line */
+.punch-line {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.punch-line h2 {
+    margin: 0;
+}
+
+.punch-line p {
+    margin-top: 8px;
+    opacity: 0.9;
+}
+
+/* Top Section */
 .top-section {
     display: flex;
     gap: 20px;
@@ -53,7 +73,7 @@ body {
     background: #fff;
     border-radius: 12px;
     padding: 20px;
-    width: 70%;
+    width: 40%;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -70,7 +90,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Content Slider Box */
+/* Slider Section */
 .content-box1 {
     display: flex;
     background: #fff;
@@ -79,7 +99,6 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* Slider */
 .slider1 {
     width: 50%;
     position: relative;
@@ -103,7 +122,6 @@ body {
     position: relative;
 }
 
-/* Content */
 .content {
     width: 50%;
     padding: 25px;
@@ -171,6 +189,12 @@ body {
 <!-- Main Section -->
 <div class="section">
 
+    <!-- Punch Line -->
+    <div class="punch-line">
+        <h2>✨ Together We Can Make a Difference</h2>
+        <p>Every small step of kindness brings hope, smiles, and a better future for those in need.</p>
+    </div>
+
     <!-- Donation + Events -->
     <div class="top-section">
 
@@ -207,7 +231,6 @@ body {
     <!-- Slider + Content -->
     <div class="content-box1">
 
-        <!-- Image Slider -->
         <div class="slider1">
             <div class="slide1 active">
                 <img src="images/smallslider/1.jpg">
@@ -223,7 +246,6 @@ body {
             <span class="next" onclick="manualSlide(1)">❯</span>
         </div>
 
-        <!-- Text Content -->
         <div class="content">
             <div class="text-slide text-active">
                 <h2>Blanket Distribution</h2>
