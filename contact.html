@@ -3,8 +3,8 @@
 <head>
 <title>Contact</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Contact Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -45,9 +45,9 @@
 
 <body>
 
- <div id="header"></div>
+    <div id="header"></div>
 
-<div class="container">
+<div class="container1" style="margin-left: auto; margin-right: auto; display: flex;">
 <!--<h2>Contact Us</h2>
 
 <form onsubmit="submitForm(); return false;">
@@ -59,7 +59,7 @@
    
   
 
-        <div class="contact-card" style="float:left;">
+        <div class="contact-card"   >
             <h2>Contact Details</h2>
             <div class="contact-info">
                 <p><span class="label">Name:</span> Vinayak Bansod</p>
@@ -75,7 +75,13 @@
 
 </div>
 
-<script src="script.js"></script>
+    <script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+
+    </script>
+    <script src="script/script.js"></script>
 </body>
 </html>
 
