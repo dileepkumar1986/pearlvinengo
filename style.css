@@ -10,7 +10,7 @@ body {
     align-items: center;
     background: linear-gradient(to right,#ffffff,#eef5ff);
     padding: 10px 20px;
-    color: white;
+    color:#123c8d;
 }
 .logo {
     display: flex;
