@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Team</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+}
+
+/* Section */
+.team-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.team-section p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grid */
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Card */
+.team-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Image */
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #27ae60;
+}
+
+/* Name */
+.team-card h3 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+/* Role */
+.team-card h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #27ae60;
+}
+
+/* Description */
+.team-card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+    <div id="header"></div>
+<section class="team-section">
+    <h2>Our Team</h2>
+    <p>Meet the dedicated people behind our mission</p>
+
+    <div class="team-container">
+
+        <div class="team-card">
+            <img src="images/team/team1.jpg" alt="Team Member">
+            <h3>आयु. विनायक बंसोड़</h3>
+            <h4>अध्यक्ष</h4>
+            <!--<p>Passionate about social change and community development.</p>-->
+        </div>
+
+        <div class="team-card">
+            <img src="images/team/sample.jpg" alt="Team Member">
+            <h3>आयु. एल.के. नामदेव </h3>
+            <h4>उपाध्यक्ष (जन संपर्क)</h4>
+            <p>Ensures smooth execution of all NGO programs and activities.</p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/team/sample.jpg" alt="Team Member">
+            <h3>आयु. राजेश सिंह</h3>
+            <h4>उपाध्यक्ष</h4>
+            <p>Actively involved in field work and helping communities.</p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/team/team2.jpg" alt="Team Member">
+            <h3>आयु. अनिल ढोके</h3>
+            <h4>सचिव</h4>
+            <p>Provides essential support in organizing events and outreach.</p>
+        </div>
+
+        <div class="team-card">
+            <img src="images/team/sample.jpg" alt="Team Member">
+            <h3>आयु. बेनीराम गायकवाड़ </h3>
+            <h4>कोषाध्यक्ष</h4>
+            <p>Provides essential support in in term of finance.</p>
+        </div>
+        <div class="team-card">
+            <img src="images/team/sample.jpg" alt="Team Member">
+            <h3>आयु. ओमप्रकाश मेश्राम</h3>
+            <h4>सह. कोषाध्यक्ष </h4>
+            <p>Provides essential support in in term of finance.</p>
+        </div>
+
+    </div>
+</section>
+    <script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+
+    </script>
+    <script src="script/script.js"></script>
+</body>
+</html>
